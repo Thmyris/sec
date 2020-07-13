@@ -123,14 +123,26 @@ dont try
 			<rich_text>The SYSTEM account is the highest privilege level in the Windows user model. It exists to provide ownership to objects that are created before a normal user logs on, such as the Local Security Authority Subsystem (LSASS) and the Session Management Subsystem (SMSS). </rich_text>
 		</node>
 	</node>
-	<node custom_icon_id="0" foreground="#ff0000" is_bold="True" name="Linux Terminal" prog_lang="custom-colors" readonly="False" tags="linux terminal bash" ts_creation="1569040898.16" ts_lastsave="1590111380.17" unique_id="1">
-		<rich_text>
-</rich_text>
+	<node custom_icon_id="0" foreground="#ff0000" is_bold="True" name="Linux Terminal" prog_lang="custom-colors" readonly="False" tags="linux terminal bash" ts_creation="1569040898.16" ts_lastsave="1594596192.95" unique_id="1">
+		<rich_text>every command/tip here assumes you are using #!/bin/bash</rich_text>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Alternative Shells" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586634398.93" ts_lastsave="1592572598.35" unique_id="298">
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="bash" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586634402.29" ts_lastsave="1586634404.76" unique_id="299">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="bash" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586634402.29" ts_lastsave="1594596166.11" unique_id="299">
+				<rich_text>see ../Operators' subnodes and Tips' subnodes for more info
+
+(command1; command2)
+
+</rich_text>
+				<rich_text weight="heavy">#bash loop until:</rich_text>
 				<rich_text>
+counter=1
+until [ $counter -gt 5 ]
+do
+echo $counter
+((counter++))
+done
+echo All done
 </rich_text>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="dash" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586634404.86" ts_lastsave="1586634409.25" unique_id="300">
@@ -316,7 +328,7 @@ Now we can use this keyboard shortcut to gain/lose window focus at will.
 </rich_text>
 			</node>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569040929.17" ts_lastsave="1591015611.71" unique_id="3">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569040929.17" ts_lastsave="1594594802.59" unique_id="3">
 			<rich_text>
 </rich_text>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="Navigation" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569041584.04" ts_lastsave="1589858753.36" unique_id="11">
@@ -459,10 +471,12 @@ Ctrl + 1 2 3    #change file appearance</rich_text>
 				<rich_text>when you input &lt;word&gt; it will execute the command within inverted commas
 this may not be permanent</rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="awk" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1579644631.68" ts_lastsave="1586681592.03" unique_id="160">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="awk" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1579644631.68" ts_lastsave="1594585027.4" unique_id="160">
 				<rich_text>allows multi-line grep searches :)
 starts from select, prints until from.
 dont know what happens if there are multiple select from pairs
+
+WARNING: awk can't display column names properly when there's a space in a column's row. Something like 'malicious file.py' is(can be?) 2 columns to awk.
 
 AWK is awesome
 it can also cut columns
@@ -557,7 +571,7 @@ i think it tries to find magicbytes in the hex file somewhere</rich_text>
 
 vimdiff file1 file2</rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="find" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586883948.53" ts_lastsave="1589865108.36" unique_id="343">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="find" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586883948.53" ts_lastsave="1594584968.36" unique_id="343">
 				<rich_text>recursive file search (to the dirs u have access to)
 
 find /
@@ -603,7 +617,7 @@ find /usr/bin -type f -mmin -120
 
 </rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="grep &lt;keyword&gt; &lt;fullpath&gt;" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569052055.09" ts_lastsave="1591199478.89" unique_id="43">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="grep &lt;keyword&gt; &lt;fullpath&gt;" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569052055.09" ts_lastsave="1594571785.46" unique_id="43">
 				<rich_text>Processes any text line by line and prints the line that has the given keyword string input.
 By default, grep displays the matching lines.
 
@@ -624,9 +638,7 @@ Arguments:
 -n              //line number!  
 -v              //ANTI GREP!
 -F              //PATTERN is a set of newline-separated fixed strings 
-</rich_text>
-				<rich_text weight="heavy">-x</rich_text>
-				<rich_text>              //Select only those matches that exactly match the whole line.
+-x              //Select only those matches that exactly match the whole line.
 
 Eg:
 grep -i “harry” /etc/passwd         //grep on that location
@@ -916,6 +928,15 @@ TODO</rich_text>
 					<rich_text>
 </rich_text>
 				</node>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="echo" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594594802.59" ts_lastsave="1594594805.09" unique_id="606">
+				<rich_text>
+
+echo $var       #prints var
+
+Tip:
+echo $      yazip sonra taba basarsan tum env variablelarin isimlerinin listesi cikiyor :)
+</rich_text>
 			</node>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Config" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570714084.11" ts_lastsave="1570893564.84" unique_id="59">
@@ -1229,36 +1250,7 @@ go run github.com/cjbassi/gotop</rich_text>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Text Editors" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586176395.27" ts_lastsave="1586876410.15" unique_id="147">
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="cherrytree" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586876410.27" ts_lastsave="1589934025.77" unique_id="332">
-				<rich_text>ctrl+w select word (buggy, removes capital letters sometimes)
-ctrl+r squiggly line seperator
-ctrl+t search node names
-ctrl+shift+l collapse nodes
-
-ctrl+g uppercase
-ctrl+b bold
-ctrl+i italic
-ctrl+u underlined
-
-cfg file(linux): /home/thmyris/.config/cherrytree/config.cfg</rich_text>
-			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="gedit" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586176405.88" ts_lastsave="1586176405.88" unique_id="190">
-				<rich_text>
-</rich_text>
-			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="kate" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586176402.05" ts_lastsave="1586176402.05" unique_id="189">
-				<rich_text>
-</rich_text>
-			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="leafpad" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586183637.19" ts_lastsave="1586183637.19" unique_id="192">
-				<rich_text>
-</rich_text>
-			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="mousepad" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586176422.06" ts_lastsave="1586176422.06" unique_id="191">
-				<rich_text>
-</rich_text>
-			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="vim" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570715235.33" ts_lastsave="1591011256.62" unique_id="65">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="vim" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570715235.33" ts_lastsave="1593944531.77" unique_id="65">
 				<rich_text>if you have any brain
 you'd use nano instead</rich_text>
 				<node custom_icon_id="0" foreground="" is_bold="False" name="-normal mode-" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570715341.37" ts_lastsave="1591019039.18" unique_id="71">
@@ -1349,6 +1341,40 @@ ctrl+w &amp; arrowkeys || hjkl</rich_text>
 					<rich_text>
 </rich_text>
 				</node>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="cherrytree" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586876410.27" ts_lastsave="1589934025.77" unique_id="332">
+				<rich_text>ctrl+w select word (buggy, removes capital letters sometimes)
+ctrl+r squiggly line seperator
+ctrl+t search node names
+ctrl+shift+l collapse nodes
+
+ctrl+g uppercase
+ctrl+b bold
+ctrl+i italic
+ctrl+u underlined
+
+cfg file(linux): /home/thmyris/.config/cherrytree/config.cfg</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="gedit" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586176405.88" ts_lastsave="1586176405.88" unique_id="190">
+				<rich_text>
+</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="kate" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586176402.05" ts_lastsave="1593944584.59" unique_id="189">
+				<rich_text>kwrite's son</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="leafpad" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586183637.19" ts_lastsave="1586183637.19" unique_id="192">
+				<rich_text>
+</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="mousepad" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586176422.06" ts_lastsave="1586176422.06" unique_id="191">
+				<rich_text>
+</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="kwrite" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1593944531.77" ts_lastsave="1593944604.51" unique_id="605">
+				<rich_text>kate's backend.
+Can be run solo, has less features than kate, runs faster(it doesnt really matter with todays hw)
+
+kwrite bir default notepad aplikasyonunun gelebilecegi zirve nokta.</rich_text>
 			</node>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Video Editing" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586183959.32" ts_lastsave="1586183963.57" unique_id="201">
@@ -5318,7 +5344,9 @@ victim&amp;email=attacker@example.com
 				<rich_text>
 Bu yontemlerle @whitelisted.com adresinden mail alinabiliyor bazen.
 Adam sunu yapmis: GitLaba uye olmak istemis yorumda XSS payloudu olan bir maille. Gitlab reddetmis, ama gitlabin 3rd party login providerlari var
-
+</rich_text>
+				<rich_text justification="left"></rich_text>
+				<rich_text>
 Onlardan 2/5i XSS li payloadi kabul etmis. Onlarin sitesinde bu bir problem degil ancak bu 3rd party auth providerlari ile gitlabe uye olunca gitlab o emaili de kabul ediyor.
 Ancak gitlab sitede emaili gosterirken XSSten duzgun bir sekilde kaciyor dolayisiyla gitlabde bu sekilde storedXSS yapamamis inti =)
 
